@@ -10,7 +10,7 @@ const Adult = (props) => {
     <div className="component">
         <Link to={"/adults/" + props.adult.id}>
         {props.adult.name}</Link>
-        <p>Phone: {props.adult.phone}</p>
+        <p>Phone: {props.adult.proficiency}</p>
     </div>
   )
 }

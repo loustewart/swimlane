@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import CustomerList from '../../components/customers/CustomerList.js';
+import AdultList from '../../components/adults/AdultList.js';
+import ChildList from '../../components/children/ChildList.js';
 
 import Request from '../../helpers/Request.js';
 
@@ -18,7 +20,10 @@ class CustomerContainer extends Component {
 
   render(){
     return (
-        <CustomerList customers={this.state.customers}/>
+      <div>
+        <AdultList adults={this.state.adults}/>
+        <ChildList children={this.state.children}/>
+      </div>
     )
   }
 }

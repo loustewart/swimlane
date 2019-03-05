@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import LessonList from '../components/lessons/LessonList.js';
-import Request from '../helpers/Request.js';
+import LessonList from '../../components/lessons/LessonList.js';
+import Request from '../../helpers/Request.js';
 
 
 class LessonContainer extends Component {
@@ -18,7 +18,10 @@ class LessonContainer extends Component {
 
   render(){
     return (
+      <div>
+          <br/>
         <LessonList lessons={this.state.lessons}/>
+      </div>
     )
   }
 }

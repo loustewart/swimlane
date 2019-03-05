@@ -42,6 +42,14 @@ body {
 
 }
 
+.new-lesson {
+  padding: 20px
+}
+
+.add-lesson {
+  padding: 20px;
+}
+
 .component {
   margin: 20px;
   padding: 10px;
@@ -50,7 +58,6 @@ body {
   border-radius: 5px;
 
 }
-
 
 ul.component-list {
   margin: 0px;
@@ -64,12 +71,4 @@ ul.component-list {
 li.component-item {
   display: flex;
   flex-wrap: wrap;
-}
-
-ul.lesson-info {
-  text-decoration: none;
-}
-
-li.lesson-info {
-  text-decoration: none;
 }

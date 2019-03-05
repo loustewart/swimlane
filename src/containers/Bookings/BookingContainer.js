@@ -17,9 +17,12 @@ class BookingContainer extends Component {
     }
 
   render(){
-    if (this.state.bookings.length === 0) return null;
-    return (
+    return(
+      <div>
+        <a className="new-booking" href="/bookings/new">Add new booking</a>
+
         <BookingList bookings={this.state.bookings}/>
+      </div>
     );
   }
 }
