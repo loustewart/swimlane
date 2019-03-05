@@ -21,7 +21,7 @@ const LessonForm = (props) => {
         <p>Location</p><input type="text" name="location"/>
         <br/><br/>
         <p>Instructor</p><input type="text" name="instructor"/>
-        <br/><br/>
+        <br/><br/><br/>
         <button type="submit">Save</button>
       </form>
     </div>

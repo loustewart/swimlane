@@ -20,6 +20,10 @@ const NavBar = (props) => {
                 </li>
               </ul>
               <br/>
+              <br/>
+              <br/>
+              <br/>
+
               <ul>
                 <li className="navLink">
                   <Link to="/bookings/new">Add new booking</Link>
@@ -31,6 +35,7 @@ const NavBar = (props) => {
                   <Link to="/customers/new">Add new customers</Link>
                 </li>
               </ul>
+
         </div>
     </header>
   )

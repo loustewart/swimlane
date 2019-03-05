@@ -15,18 +15,16 @@ body {
 }
 
 .navigation-bar {
-    width: 100%;
-    height: 200px;
-    background-image: url("/images/swimming-banner.png");
-    background-size: cover;
+  width: 100%;
+  height: 200px;
+  background-image: url("/images/swimming-banner.png");
+  background-size: cover;
 }
 
 .navigation-bar ul {
-  padding: 10px;
   text-align:left;
   display: inline-block;
   float: left;
-
 }
 
 .navigation-bar li {
@@ -43,11 +41,11 @@ body {
 }
 
 .new-lesson {
-  padding: 20px
+  padding: 20px;
 }
 
 .add-lesson {
-  padding: 20px;
+  padding: 40px;
 }
 
 .component {
@@ -56,7 +54,11 @@ body {
   width: 300px;
   border: 1px dotted;
   border-radius: 5px;
+}
 
+.all-bookings {
+  padding: 20px;
+  display: inline-block;
 }
 
 ul.component-list {
@@ -71,4 +73,34 @@ ul.component-list {
 li.component-item {
   display: flex;
   flex-wrap: wrap;
+}
+
+input {
+  height: 30px;
+  width: 200px;
+  font-size: 16px;
+  background-color: rgb(180, 232, 244);
+  font-family: 'Jura', sans-serif;
+  border-radius: 5px;
+}
+
+button {
+  height: 25px;
+  display: inline-block;
+  font-family: 'Jura', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  background-color: #rgb(180, 232, 244);
+  border-radius: 15px;
+  box-shadow: 0 2px #999;
+}
+
+button:hover {background-color: rgb(180, 232, 244)}
+
+button:active {
+  background-color: rgb(180, 232, 244);
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
 }

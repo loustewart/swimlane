@@ -8,6 +8,7 @@ import ChildContainer from './containers/Children/ChildContainer.js'
 import AdultContainer from './containers/Adults/AdultContainer.js'
 import CustomerContainer from './containers/Customers/CustomerContainer.js'
 import LessonFormContainer from './containers/Lessons/LessonFormContainer.js'
+import SingleLessonContainer from './containers/Lessons/SingleLessonContainer.js'
 
 
 class App extends Component {
@@ -27,8 +28,10 @@ class App extends Component {
           <Route exact path="/customers"
           component={AdultContainer}/>
           <Route exact path = '/lessons/new' component={LessonFormContainer}/>
-
-
+          <Route exact path='/lessons/:id' render = {(props) => {
+          const id = props.match.params.id;
+          return <SingleLessonContainer id = {id} />
+            }}/>
           }
         }
         />

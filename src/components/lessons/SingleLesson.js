@@ -1,6 +1,6 @@
 import React  from 'react';
 
-const SingleeEsson = (props) => {
+const SingleLesson = (props) => {
 
   if(!props.lesson){
     return null;
