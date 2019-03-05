@@ -8,7 +8,7 @@ const Customer = (props) => {
 
   return (
     <div className="component">
-        <Link to={"/customer/" + props.customer.id}>
+        <Link to={"/customers/" + props.customer.id}>
         {props.customer.name}</Link>
         <p>Phone: {props.customer.phone}</p>
     </div>

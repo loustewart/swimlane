@@ -1,5 +1,5 @@
 import React  from 'react';
-import {Link} from 'react-router-dom';
+
 
 const Lesson = (props) => {
   if(!props.lesson){
@@ -7,11 +7,10 @@ const Lesson = (props) => {
 }
 
   return (
-    <div className="component">
-        <Link to={"/lesson/" + props.lesson.id}>
-        {props.lesson.type}</Link>
-        <p>Location: {props.lesson.location}</p>
-        <p>Instructor: {props.lesson.instructor}</p>
+    <div>
+    <ul className="lesson-info">
+      <li className="lesson-info">Lesson Type: {props.lesson.type}</li>
+    </ul>
     </div>
   )
 }

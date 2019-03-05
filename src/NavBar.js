@@ -6,6 +6,8 @@ const NavBar = (props) => {
     <header>
     <div className="navigation-bar">
           <img className="logo" alt=""/>
+          <a href="/" className="title">SwimLane</a>
+            <br/>
               <ul>
                 <li className="navLink">
                   <Link to="/bookings">Bookings</Link>
@@ -14,7 +16,7 @@ const NavBar = (props) => {
                   <Link to="/lessons">Lessons</Link>
                 </li>
                 <li className="navLink">
-                  <Link to="/customers">Customers</Link> 
+                  <Link to="/customers">Customers</Link>
                 </li>
               </ul>
         </div>

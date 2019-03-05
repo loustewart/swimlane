@@ -1,5 +1,3 @@
-import React from 'react';
-
 
 class Request {
 
@@ -7,7 +5,7 @@ class Request {
     return fetch(url)
     .then((res) => res.json());
   }
-
+  
   delete(url) {
     return fetch(url, {
       method: "DELETE",

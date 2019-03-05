@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import CustomerList from '../components/customers/CustomerList.js';
+import CustomerList from '../../components/customers/CustomerList.js';
 
-import Request from '../helpers/Request.js';
+import Request from '../../helpers/Request.js';
 
 class CustomerContainer extends Component {
   constructor(props){

@@ -1,7 +1,6 @@
 import React from 'react';
 import Lesson from './Lesson.js';
 
-
 const LessonList = (props) => {
 
 	const lessons = props.lessons.map((lesson) => {

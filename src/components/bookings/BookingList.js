@@ -3,7 +3,7 @@ import Booking from './Booking.js';
 
 
 const BookingList = (props) => {
-
+	console.log('bookings', props.bookings);
 	const bookings = props.bookings.map((booking) => {
 		 	return (<li key={booking.id} className="component-item">
 				<Booking booking={booking} />
@@ -11,7 +11,6 @@ const BookingList = (props) => {
 		)
 		})
 
-console.log(props.bookings);
 	return (
 		<ul className="component-list">
 			{bookings}

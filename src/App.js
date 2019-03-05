@@ -3,8 +3,10 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import NavBar from './NavBar.js'
 
 import LessonContainer from './containers/LessonContainer.js'
-import BookingContainer from './containers/BookingContainer.js'
-import CustomerContainer from './containers/CustomerContainer.js'
+import BookingContainer from './containers/Bookings/BookingContainer.js'
+import CustomerContainer from './containers/Customers/CustomerContainer.js'
+import ChildContainer from './containers/Children/ChildContainer.js'
+
 
 class App extends Component {
   render() {
@@ -14,14 +16,12 @@ class App extends Component {
         <React.Fragment>
           <NavBar/>
           <Switch>
-          <Route exect path='/lessons'
+          <Route exact path="/lessons"
           component={LessonContainer} />
-
-          <Route exect path='/bookings'
-          component={BookingContainer} />
-
-          <Route exect path='/customers'
-          component={CustomerContainer} />
+          <Route exact path="/bookings"
+          component={BookingContainer}/>
+          <Route exact path="/customers"
+          component={ChildContainer}/>
           </Switch>
         </React.Fragment>
       </Router>
