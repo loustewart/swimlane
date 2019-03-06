@@ -18,7 +18,9 @@ class AdultContainer extends Component {
 
   render(){
     return (
+      <div className="return-all">
         <AdultList adults={this.state.adults}/>
+      </div>
     )
   }
 }

@@ -18,7 +18,7 @@ class LessonContainer extends Component {
 
   render(){
     return (
-      <div>
+      <div className="return-all">
           <br/>
         <LessonList lessons={this.state.lessons}/>
       </div>

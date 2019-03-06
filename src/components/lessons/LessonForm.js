@@ -6,8 +6,8 @@ const LessonForm = (props) => {
     event.preventDefault();
     const lesson = {
       "type": event.target.type.value,
-      "location": event.target.type.value,
-      "instructor": event.target.type.value
+      "location": event.target.location.value,
+      "instructor": event.target.instructor.value
     }
     props.onSubmit(lesson);
   }

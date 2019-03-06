@@ -18,7 +18,7 @@ class BookingContainer extends Component {
 
   render(){
     return(
-      <div className="all-bookings">
+      <div className="return-all">
         <BookingList bookings={this.state.bookings}/>
       </div>
     );

@@ -15,6 +15,7 @@ const SingleLesson = (props) => {
       <p>{props.lesson.type}</p>
       <p>Location: {props.lesson.location}</p>
       <p>Instructor: {props.lesson.instructor}</p>
+      <br/>
       <button onClick={onDelete}>Delete Lesson</button>
     </div>
   )

@@ -20,9 +20,4 @@ class LessonFormContainer extends Component {
   }
 
 }
-
-
-
-
-
 export default LessonFormContainer;

@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import CustomerList from '../../components/customers/CustomerList.js';
 import AdultList from '../../components/adults/AdultList.js';
 import ChildList from '../../components/children/ChildList.js';
 
@@ -20,7 +19,7 @@ class CustomerContainer extends Component {
 
   render(){
     return (
-      <div>
+      <div className="return-all">
         <AdultList adults={this.state.adults}/>
         <ChildList children={this.state.children}/>
       </div>
